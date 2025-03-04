@@ -3,6 +3,7 @@
 	from: University of Engineering and Technology
 */
 
+#include "utils.h"
 #include "render.h"
 
 int main(int argc, char* argv[]) {

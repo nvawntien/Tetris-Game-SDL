@@ -8,4 +8,6 @@
 #define GRID_HEIGHT 20
 #define BLOCK_SIZE 30
 
+extern int grid[GRID_HEIGHT][GRID_WIDTH];
+
 #endif
