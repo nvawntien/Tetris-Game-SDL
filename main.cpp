@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
             // ... event input
         }
         
-        //updateGame();
+        updateGame();
         renderGame(renderer);
     }
 

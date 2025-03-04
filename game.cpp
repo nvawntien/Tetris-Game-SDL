@@ -1,7 +1,7 @@
 #include "game.h"
 
 
-int grid[GRID_HEIGHT][GRID_WIDTH] = {0};
+int grid[GRID_HEIGHT][GRID_WIDTH];
 
 void initGame() {
     srand(time(NULL));
@@ -12,4 +12,16 @@ void initGame() {
     }
 
     newPiece();
+}
+
+void updateGame() {
+    static Uint32 lastUpdate = 0;
+    Uint32 currentTime = SDL_GetTicks();
+
+    if (currentTime - lastUpdate > 1000) {
+        Tetromino piece = currentPiece;
+        piece.y++;
+        currentPiece = piece;
+        lastUpdate = currentTime;
+    }
 }
