@@ -1,7 +1,7 @@
 #ifndef TETROMINO_H
 #define TETROMINO_H
+
 #include "game.h"
-#include <stdlib.h>
 
 typedef struct {
     int x,y;
