@@ -12,5 +12,7 @@ extern Tetromino currentPiece;
 extern const Tetromino tetrominoes[7];
 
 void newPiece();
+void mergePiece(Tetromino piece);
+void checkCollision(Tetromino piece);
 
 #endif
